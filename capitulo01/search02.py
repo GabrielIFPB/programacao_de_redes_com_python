@@ -3,7 +3,7 @@ import requests
 
 
 def geocode(address):
-	parameters = {'address': address, 'sensor': 'false', 'key': 'AIzaSyAPQ4GzOmytPQ8TO0I4eXaKiGwo95ENLDw'}
+	parameters = {'address': address, 'sensor': 'false', 'key': ''}
 	base = 'https://maps.googleapis.com/maps/api/geocode/json'
 	response = requests.get(base, params=parameters)
 	answer = response.json()
