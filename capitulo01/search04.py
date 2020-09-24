@@ -27,4 +27,4 @@ def geocode(address):
 
 
 if __name__ == '__main__':
-	geocode('rua colombia 87 nações guarabira paraiba')
+	geocode('')
