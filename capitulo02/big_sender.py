@@ -21,7 +21,7 @@ def send_big_datagram(host, port):
 	sock.connect((host, port))
 	
 	try:
-		sock.send(b'#' * 999999)
+		sock.send(b'#' * 65000)  # 65535, 99999
 	except socket.error:
 		print('Alas, the datagram did not make it')
 		max_mtu = sock.getsockopt(socket.IPPROTO_IP, IN.IP_MTU)
